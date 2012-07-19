@@ -24,9 +24,9 @@
 
   5、修改config文件夹下的配置文件，进行数据库连接
 
-##项目架构及介绍：http://snoopyxdy.blog.163.com/blog/static/60117440201261844125973/
+##架构及介绍：http://snoopyxdy.blog.163.com/blog/static/60117440201261844125973/
 
-##项目意见建议：http://snoopyxdy.blog.163.com/blog/static/60117440201261984421292/
+##意见建议：http://snoopyxdy.blog.163.com/blog/static/60117440201261984421292/
 
 ##联系方式
 
