@@ -1,0 +1,45 @@
+form#settingForm(action="/setting/update/", method="post")
+ table(width="100%", border="0", cellspacing="0", cellpadding="0")
+  tr
+   td.tabTitle(colspan="3") 
+     b 个人设置
+  tr
+   td.tabHead(width="20%") 用户名
+   td(width="40%") #{my.remail}
+   td(width="40%") &nbsp;
+  tr
+    td.tabHead Gravatar头像
+    td.tabFace 
+      img(src="#{my.face}", width="50", height="50")
+      a.tabA(href="http://www.gravatar.com/", target="_blank") 去Gravatar官网设置头像
+    td &nbsp;
+  tr
+    td.tabHead 密码
+    td 
+      a#setpwd(href="javascript:;") 设置密码
+    td &nbsp;
+  tr#setpwdtr.none
+    td.tabHead 密码
+    td 
+      input.textInput(type="password", value="", name="password", maxlength="20")
+    td.ftgray *6-20位字母数字下划线
+  tr
+    td.tabHead 昵称
+    td #{my.name}
+      a#changename.tabA(href="javascript:;") 更改昵称
+    td &nbsp;
+  tr#changenamebox.none
+    td.tabHead 昵称
+    td 
+      input.textInput(type="text",value="#{my.name}", name="name", maxlength="15")
+    td.ftgray *最长15位
+  tr
+    td.tabHead 个性签名
+    td(colspan="2")
+      input.textInput(type="text", value="#{my.description}", name="description", maxlength="50")
+  tr
+    td
+    td
+      a.pbg.comBt(href="javascript:;")
+        button(type="submit") 完成
+    td &nbsp;

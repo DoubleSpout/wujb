@@ -1,0 +1,19 @@
+-if(isuser)
+ .sTitle.clearfix
+  .sFace
+    a(href="javascript:;", title="#{user.name}")
+      img(src="#{user.face}", width="50", height="50")
+    -if(!my.isme)
+     span
+      a.pbg.faceMsg(href="/message/send/#{user._id}", target="_blank", title="发私信")
+      - if(my.isFriend)
+          a.pbg.faceFriend2(name="cancelfriend", href="/friends/cancel/#{user._id}", title="取消好友")             
+      - else
+          a.pbg.faceFriend(name="addfriend", href="/friends/add/#{user._id}", title="加好友")
+  .sName
+    h2#name.clearfix.ftblue #{user.email} 
+      b.ftgray (#{user.name})
+      span.ftgray 注册日期： #{user.regtime}
+    p #{user.description}
+-else
+ h3 我喜欢的文章

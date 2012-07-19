@@ -1,0 +1,27 @@
+input#caterr(value="#{error}", type="hidden")
+input#catsuc(value="#{suc}", type="hidden")
+form#pubCat(action="/publish/addcatalog", method="post", enctype="multipart/form-data")
+  table(width="100%",border="0",cellspacing="0",cellpadding="0")
+    tr
+      td.tabTitle(colspan="3")
+        b 发布本站封面
+    tr
+      td.tabHead 标题
+      td 
+        input#title.textInput(type="text", value="",  name="title", maxlength="30")
+      td.ftgray *最长30位
+    tr
+      td.tabHead 上传图片
+      td(colspan="2")
+        input#file.textInput(type="file", value="",  name="image")
+    tr
+      td.tabHead 说明
+      td(colspan="2") 图片分辨率需在1800*1600以上，JPG格式
+    tr
+      td
+      td
+        a.pbg.comBt(href="javascript:;")
+          button(type="submit") 完成
+        a.pbg.comBt.comCBt(href="/home")
+          button(type="button")取消
+      td

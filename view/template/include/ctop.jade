@@ -1,0 +1,14 @@
+.sTitle.clearfix
+  .sFace
+    a(href="javascript:;", title="#{user.name}")
+      img(src="#{user.face}", width="50", height="50")
+    span
+      a.pbg.faceMsg(href="/message/send/#{user.id}", target="_blank", title="发私信")
+      - if(user.isfriend)
+          a.pbg.faceFriend(name="addfriend", href="/friends/add/#{user.id}", title="加好友")  
+      - else
+          a.pbg.faceFriend(name="cancelfriend", href="/friends/cancel/#{user.id}", title="取消好友")  
+  .sName
+    h2#name.clearfix.ftblue #{user.name}
+      span.ftgray 注册日期： #{user.cteatetime}
+    p #{user.description}

@@ -1,0 +1,23 @@
+.msgTitle 和
+  b.ftblue #{otherobj.email} (#{otherobj.name})
+  | 私信中
+.msgChat
+  table(width="100%",border="0",cellspacing="0",cellpadding="0")
+   -if(msginfolist.length ===0)
+      tr
+       td.tabHead(width="10%")
+       td.msgWo(width="80%") 暂无消息
+       td.tabHead(width="10%")
+   -else   
+     - each msg in msginfolist
+       - if(msg.from != my.uid)
+           include info_otherblock.jade
+       - else
+           include info_myblock.jade
+.msgSend
+  form#msgSend(action="/message/add/#{otherobj._id}", method="post")
+    .fl 发言：
+    input#msg.textInput(type="text", value="", name="content")
+    a.pbg.comBt(href="javascript:;")
+      button(type="submit") 发送
+    a.pbg.comBt.comCBt(href="/message/index##{backid}") 返回

@@ -1,0 +1,32 @@
+table(width="100%",border="0",cellspacing="0",cellpadding="0")
+  tr
+    td.tabTitle(colspan="2")
+      b 私信列表
+    td.tabTitle(width="30%")
+      -if(friendlist.length>0)
+       select.grayborder#selFriend
+         option(value="0") --选择好友--
+         - each uobj in friendlist
+           option(value="#{uobj._id}") #{uobj.email}(#{uobj.name})
+      -else
+        a.bluea(href="/friends/explorer") 赶快去找好友
+  -if(msglist.length===0)
+    tr.msgBt.msgBth
+      td.tabHead(width="10%")
+      td.msgContent(width="60%") 暂无消息
+      td.txtc(width="30%")
+  -else  
+    - each msg in msglist
+      tr.msgBt.msgBth
+        td.tabHead(width="10%")
+          img(src="#{msg.fromface}", width="50", height="50")
+        td.msgContent(width="60%")
+          strong.ftblue #{msg.fromname}
+          span #{msg.content}
+            b.ftgray #{msg.timestamp}
+        td.txtc(width="30%")
+          -if(my.uid === msg.from)
+            a.pbg.comBt(href="/message/info/#{msg.to}") 详细
+          -else
+            a.pbg.comBt(href="/message/info/#{msg.from}?backid=#{msg._id}") 详细
+          a.pbg.comBt.comDBt(name="delMsg", href="/message/del/#{msg._id}") 删除

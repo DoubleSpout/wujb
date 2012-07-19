@@ -1,0 +1,49 @@
+form#publish(action="/publish/add/", method="post")
+  table(width="100%",border="0",cellspacing="0",cellpadding="0")
+    tr
+      td.tabTitle(colspan="3")
+        b 写内容
+    tr
+      td.tabHead(width="20%") 发布类型
+      td(width="40%")
+        label.ftblue(for="word")
+          - if(addType == 'word')
+              input#word(type="radio", name="type", value="word", checked = "checked") 
+          - else
+              input#word(type="radio", name="type", value="word") 
+          | 文字
+        label.ftblue(for="pic")
+          - if(addType == 'pic')
+              input#pic(type="radio", name="type", value="pic", checked = "checked") 
+          - else
+              input#pic(type="radio", name="type", value="pic")          
+          | 图片
+        label.ftblue(for="video")
+          - if(addType == 'video')
+              input#video(type="radio", name="type", value="video", checked = "checked") 
+          - else
+              input#video(type="radio", name="type", value="video")        
+          | 视频			
+      td(width="40%")
+        a(href="/publish/catalog") 我去发布网站封面
+    tr
+      td.tabHead 标题
+      td 
+        input#title.textInput(type="text", value="",  name="title", maxlength="15")
+      td.ftgray *最长30位
+    tr
+      td.tabHead 图片/视频 地址
+      td(colspan="2")
+        input#url.textInput(type="text", value="",  name="url", maxlength="200")
+    tr
+      td.tabHead 正文内容
+      td(colspan="2") 
+        textarea#content.textInput.textTextarea(name="content", maxlength="200")
+    tr
+      td
+      td
+        a.pbg.comBt(href="javascript:;")
+          button(type="submit") 完成
+        a.pbg.comBt.comCBt(href="/home")
+          button(type="button")取消
+      td

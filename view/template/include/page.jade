@@ -1,0 +1,16 @@
+.page.clearfix
+  span 共
+    b.ftblue #{page.totalnum}
+    | 篇，当前
+    b.ftblue #{page.curpage}/#{page.totalpage}
+    |页
+  - if(page.curpage == page.totalpage)
+      a.pbg.dis(href="javascript:;") 下一页
+  - else
+      a.pbg(href="#{page.hrefnext}") 下一页
+  - if(page.curpage == 1)
+      a.pbg.dis(href="javascript:;") 上一页
+  - else
+      a.pbg(href="#{page.hrefprev}") 上一页
+
+

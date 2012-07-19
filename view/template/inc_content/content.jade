@@ -1,0 +1,29 @@
+.pcContent
+  - if(content.type == 'pic') var typeclass = 'picType'
+  - else if(content.type == 'word') var typeclass = 'wordType'
+  - else var typeclass = 'videoType'
+  .pbg.type(class = "#{typeclass}")
+  h1.ftorange #{content.title}
+  .pccTag.ftgray 2012-03-15
+    | /
+    span 喜欢(#{content.lovenum})
+    | /
+    span 评论(#{content.commetnum})
+  -if(typeclass == 'videoType')
+    object(classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000", codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0", width="600", height="400")
+      param(name="movie", value="#{content.imgs[0]}")  
+      param(name="quality", value="high")  
+      param(name="wmode", value="Opaque")
+      embed(src="#{content.imgs[0]}", mce_src="#{content.imgs[0]}", quality="high", pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash", type="application/x-shockwave-flash", width="600", height="400")
+  -else if(typeclass == 'wordType')
+   | &nbsp;
+  -else
+   -each img in content.imgs
+     a(href="#{img}", target="_blank")
+       img(src="#{img}")
+  !{content.content}
+  .pccTag.ftgray
+    a(href="#name") 返回顶部
+.pcPN.alpha
+  a.pbg.prevArt#prevArt(href="/content/prev/#{content.id}", title="上一篇", style="visibility:hidden")
+  a.pbg.nextArt#nextArt(href="/content/next/#{content.id}", title="下一篇", style="visibility:hidden")

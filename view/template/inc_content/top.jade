@@ -1,0 +1,18 @@
+.pcTop
+  -if(!ismy){
+   .clearfix.pBar
+    - if('undefined' === content.islove || false === content.islove)
+        a.pbg.pBarALove(name="love", href="/content/ilove/#{content.id}", title="喜欢此文章") 喜欢此文章
+    - else
+        a.pbg.pBarCLove(name="dislove", href="/content/inotlove/#{content.id}", title="不喜欢") 不喜欢
+    .pbg.pBarR
+  .clearfix.pBar
+    - if('undefined' === content.isfriend || false === content.isfriend)
+        a.pbg.pBarAFriend(name="addfriend", href="/friends/add/#{content.authorid}", title="加好友") 加好友</a>
+    - else
+        a.pbg.pBarCFriend(name="cancelfriend", href="/friends/cancel/#{content.authorid}",  title="取消好友") 取消好友
+    .pbg.pBarR
+   -}
+  .clearfix.pBar
+    a.pbg.pBarHome(href="/home", title="返回首页") 返回首页
+    .pbg.pBarR

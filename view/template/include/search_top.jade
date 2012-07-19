@@ -1,0 +1,10 @@
+span.scWords  
+  -if('undefined' != typeof myfriends)
+     我的好友列表
+  -else
+     b.ftblue 查找 "#{searchWords}"
+     | 的结果
+span.scInput.scInputH
+  form(name="searchform", action="", method="get")
+    button.pbg(type="submit")
+    input#search(value="", name="seach")

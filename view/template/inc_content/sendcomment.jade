@@ -1,0 +1,9 @@
+h4.clearfix 评论（#{content.commetnum}）
+  span.ftorange 评论输入
+    b.msgCondition.ftblue 0/100
+    | 个字
+form.commentForm(action="/comment/send/#{content.id}", method="post")
+  textarea.msg(name="msg")
+  .submitSmall
+    a(href="javascript:;")
+      button(type="submit") 发布

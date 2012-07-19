@@ -1,0 +1,11 @@
+tr
+  td.tabHead(width="10%")
+    a(href="/content/list/#{msg.from}", title="#{msg.fromname}")
+      img(src="#{msg.fromface}", width="50", height="50")
+  td.msgTa(width="80%")   
+    .msgBox
+      .pbg.msgArrow 
+      p #{msg.content}
+        b.ftblue #{msg.timestamp}
+                
+  td.tabHead(width="10%") 

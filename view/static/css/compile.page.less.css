@@ -1,0 +1,1094 @@
+.faceMsg {
+  background-position: -351px -114px;
+}
+.faceMsg:hover {
+  background-position: -350px -113px;
+}
+.faceFriend {
+  background-position: -410px -115px;
+}
+.faceFriend:hover {
+  background-position: -409px -114px;
+}
+.faceFriend2 {
+  background-position: -524px -110px;
+}
+.faceFriend2:hover {
+  background-position: -523px -109px;
+}
+.facePerson {
+  background-position: -421px -136px;
+}
+.facePerson:hover {
+  background-position: -420px -135px;
+}
+.pcTop {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  left: 0;
+  padding: 5px 0;
+  z-index: 99;
+}
+.pcTop .pBar {
+  margin-right: 20px;
+}
+.plogo {
+  width: 265px;
+  height: 90px;
+  display: inline-block;
+  cursor: pointer;
+  background-position: -628px 18px;
+  overflow: hidden;
+}
+.plogo:active {
+  background-position: -626px 20px;
+}
+.pNav {
+  position: absolute;
+  text-align: right;
+  width: 500px;
+  height: 50px;
+  z-index: 10;
+  right: 0;
+  bottom: 0px;
+}
+.pNav a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin: 0 12px;
+}
+.pNav .navLogout {
+  background-position: 0px 0px;
+}
+.pNav .navLogout:hover {
+  background-position: 0px -60px;
+}
+.pNav .navMsg {
+  background-position: -57px 0px;
+}
+.pNav .navMsg:hover {
+  background-position: -57px -60px;
+}
+.pNav .navSearch {
+  background-position: -113px 0px;
+}
+.pNav .navSearch:hover {
+  background-position: -113px -60px;
+}
+.pNav .navSet {
+  background-position: -182px 0px;
+}
+.pNav .navSet:hover {
+  background-position: -182px -60px;
+}
+.pNav .navContent {
+  background-position: -237px 0px;
+}
+.pNav .navContent:hover {
+  background-position: -237px -60px;
+}
+.pNav .navHome {
+  background-position: -297px 0px;
+}
+.pNav .navHome:hover {
+  background-position: -297px -60px;
+}
+.pNav .navFriend {
+  background-position: -354px 0px;
+}
+.pNav .navFriend:hover {
+  background-position: -354px -60px;
+}
+.pNav .unRead {
+  display: none;
+  height: 27px;
+  position: absolute;
+  top: -30px;
+  left: 235px;
+  background-position: -901px -115px;
+  padding: 0 8px;
+  line-height: 18px;
+  color: #fff;
+  text-align: left;
+}
+.pNav .unReadRight {
+  height: 27px;
+  width: 3px;
+  position: absolute;
+  right: -3px;
+  top: 0px;
+  background-position: right -148px;
+}
+.pBody {
+  width: 930px;
+  margin: 35px auto;
+}
+.pBody .pLeft {
+  width: 670px;
+}
+.pBody .pLeft .pQuick {
+  width: 670px;
+  margin-bottom: 20px;
+}
+.pBody .pLeft .pQuick a {
+  display: block;
+  width: 140px;
+  height: 115px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.pBody .pLeft .pQuick .pqFace {
+  width: 110px;
+  background-position: 0px -157px;
+}
+.pBody .pLeft .pQuick .pqFace:hover {
+  background-position: 0px -289px;
+}
+.pBody .pLeft .pQuick .pqWord {
+  background-position: -110px -157px;
+}
+.pBody .pLeft .pQuick .pqWord:hover {
+  background-position: -110px -289px;
+}
+.pBody .pLeft .pQuick .pqPic {
+  background-position: -250px -157px;
+}
+.pBody .pLeft .pQuick .pqPic:hover {
+  background-position: -250px -289px;
+}
+.pBody .pLeft .pQuick .pqVideo {
+  background-position: -390px -157px;
+}
+.pBody .pLeft .pQuick .pqVideo:hover {
+  background-position: -390px -289px;
+}
+.pBody .pLeft .pQuick .pqB {
+  background-position: -530px -157px;
+}
+.pBody .pLeft .pQuick .pqB:hover {
+  background-position: -530px -289px;
+}
+.pBody .pRight {
+  width: 223px;
+}
+.pBody .pRight .prLove {
+  background-position: -663px -963px;
+  width: 223px;
+}
+.pBody .pRight .prLove .pbg {
+  background-position: -122px -131px;
+  margin: 10px 20px 0;
+  color: #fff;
+  height: 27px;
+  display: block;
+  line-height: 21px;
+  padding-left: 25px;
+}
+.pBody .pRight .prLove .pbg:hover {
+  color: #fff;
+}
+.pBody .pRight .prLove .blacka {
+  display: block;
+  height: 30px;
+  width: 223px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  background-color: #fff;
+}
+.pBody .pRight .prFriend {
+  margin-top: 20px;
+}
+.pBody .pRight .prFriend .pbg {
+  background-position: -421px -131px;
+}
+.pList {
+  margin: 0;
+}
+.pList dl {
+  padding-bottom: 50px;
+  width: 670px;
+}
+.pList dl dt {
+  width: 85px;
+  height: 110px;
+  float: left;
+  text-align: center;
+}
+.pList dl dt img {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+.pList dl dt .dtLink {
+  background-color: #777;
+  width: 70px;
+  padding: 5px;
+}
+.pList dl dt .pbg {
+  display: inline-block;
+  margin: 0 5px;
+  width: 15px;
+  height: 12px;
+}
+.pList dl dd {
+  width: 500px;
+  position: relative;
+  margin-top: 24px;
+  float: right;
+  background-color: #fff;
+  border: #B5B5B6 1px solid;
+  padding: 0 30px 30px;
+  box-shadow: 0px 0px 1px #cccccc;
+  -moz-box-shadow: 0px 0px 1px #cccccc;
+  -webkit-box-shadow: 0px 0px 1px #cccccc;
+}
+.pList dl dd .ddTop {
+  position: absolute;
+  width: 581px;
+  height: 24px;
+  background-position: 0px -920px;
+  top: -24px;
+  right: 0px;
+}
+.pList dl dd h2 {
+  padding: 5px 0;
+  height: 40px;
+  line-height: 40px;
+}
+.pList dl dd h2 .fr {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  padding-top: 10px;
+}
+.pList dl dd .ddContent {
+  width: 250px;
+}
+.pList dl dd .ddImg {
+  text-align: right;
+  width: 250px;
+}
+.pList dl dd .ddImg img {
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 120px;
+}
+.pList dl .ddTopR {
+  position: absolute;
+  width: 23px;
+  height: 27px;
+  top: -1px;
+  right: -1px;
+  background-position: 2px -863px;
+}
+.pList dl .ddBottom {
+  clear: both;
+  text-align: right;
+  height: 20px;
+  line-height: 20px;
+  padding-top: 10px;
+}
+.pList dl .ddBottom a {
+  display: inline-block;
+  height: 20px;
+  font-size: 12px;
+  margin: 0 0 0 10px;
+}
+.pList dl .ddBottom .ddLove {
+  padding-left: 15px;
+  height: 22px;
+  background-position: -182px -111px;
+}
+.pList dl .ddBottom .ddLove:hover {
+  background-position: -237px -111px;
+}
+.pList dl .ddBottom span {
+  display: block;
+  float: left;
+  text-align: left;
+}
+.pList .dlh .ddTopR {
+  background-position: -117px -864px;
+}
+.pBar {
+  height: 23px;
+  display: inline-block;
+  position: relative;
+  line-height: 23px;
+}
+.pBar a {
+  display: block;
+  float: left;
+  color: #fff;
+  font-size: 12px;
+  padding: 0 10px 0 30px;
+  background-position: -421px -474px;
+}
+.pBar .pBarR {
+  position: absolute;
+  right: -2px;
+  top: 0;
+  height: 23px;
+  width: 2px;
+  background-position: -421px -442px;
+}
+.pBar .pBarHome {
+  background-position: -421px -474px;
+}
+.pBar .pBarHome:hover {
+  background-position: -421px -504px;
+}
+.pBar .pBarAFriend {
+  background-position: -421px -534px;
+}
+.pBar .pBarAFriend:hover {
+  background-position: -421px -564px;
+}
+.pBar .pBarCFriend {
+  background-position: -421px -594px;
+}
+.pBar .pBarCFriend:hover {
+  background-position: -421px -624px;
+}
+.pBar .pBarALove {
+  background-position: -421px -656px;
+}
+.pBar .pBarALove:hover {
+  background-position: -421px -686px;
+}
+.pBar .pBarCLove {
+  background-position: -600px -442px;
+}
+.pBar .pBarCLove:hover {
+  background-position: -600px -472px;
+}
+.pcWrapWide {
+  width: 1260px;
+  margin: 45px auto;
+}
+.pcWrapWide .pcTitle {
+  width: 700px;
+  height: 150px;
+  background-color: #fff;
+  padding: 20px;
+}
+.pcWrapWide .pcTitle .pctFace {
+  width: 120px;
+  float: left;
+}
+.pcWrapWide .pcTitle .pctFace img {
+  display: block;
+  width: 120px;
+  height: 120px;
+}
+.pcWrapWide .pcTitle .pctFace span {
+  display: block;
+  background-color: #777;
+  width: 110px;
+  padding: 5px;
+  text-align: center;
+}
+.pcWrapWide .pcTitle .pctFace span a {
+  display: inline-block;
+  height: 12px;
+  margin: 0 5px;
+  width: 15px;
+}
+.pcWrapWide .pcTitle .pctName {
+  width: 560px;
+  float: right;
+}
+.pcWrapWide .pcTitle .pctName h2 {
+  font-size: 20px;
+}
+.pcWrapWide .pcTitle .pctName h2 b {
+  font-size: 14px;
+  padding-left: 10px;
+  color: #aaa;
+}
+.pcWrapWide .pcTitle .pctName h2 span {
+  display: block;
+  float: right;
+  font-size: 14px;
+  padding-top: 5px;
+  font-weight: normal;
+}
+.pcWrapWide .pcTitle .pctName p {
+  height: 75px;
+  overflow: hidden;
+}
+.pcWrapWide .pcTitle .pctName a {
+  display: inline-block;
+  margin-right: 20px;
+}
+.pcWrapWide .pcContent {
+  width: 700px;
+  position: relative;
+  margin: 20px 0 0 0;
+  background-color: #fff;
+  padding: 20px;
+}
+.pcWrapWide .pcContent object {
+  display: block;
+  margin: 10px auto 20px;
+}
+.pcWrapWide .pcContent .type {
+  position: absolute;
+  width: 54px;
+  height: 44px;
+  left: 0;
+  top: 20px;
+}
+.pcWrapWide .pcContent .picType {
+  background-position: 0 -443px;
+}
+.pcWrapWide .pcContent .wordType {
+  background-position: 0 -488px;
+}
+.pcWrapWide .pcContent .videoType {
+  background-position: 0 -533px;
+}
+.pcWrapWide .pcContent .audioType {
+  background-position: 0 -578px;
+}
+.pcWrapWide .pcContent h1 {
+  width: 620px;
+  margin: 0 0 0 60px;
+  font-size: 20px;
+  height: 35px;
+  line-height: 30px;
+  border-bottom: #E6E6E6 1px solid;
+}
+.pcWrapWide .pcContent .pccTag {
+  font-size: 14px;
+  height: 35px;
+  line-height: 35px;
+  text-align: right;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+.pcWrapWide .pcContent .pccTag span {
+  margin: 0 10px;
+}
+.pcWrapWide .pcContent img {
+  max-width: 700px;
+  display: block;
+  margin: 10px auto;
+}
+.pcWrapWide .pcPN {
+  text-align: right;
+  width: 740px;
+  height: 60px;
+  padding: 10px 0;
+}
+.pcWrapWide .pcPN .pbg {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.pcWrapWide .pcPN .prevArt {
+  background-position: -297px -442px;
+}
+.pcWrapWide .pcPN .prevArt:hover {
+  background-position: -297px -506px;
+}
+.pcWrapWide .pcPN .nextArt {
+  background-position: -297px -569px;
+}
+.pcWrapWide .pcPN .nextArt:hover {
+  background-position: -297px -633px;
+}
+.pcWrapWide .pcComment {
+  width: 690px;
+  background-color: #fff;
+  padding: 25px;
+}
+.pcWrapWide .pcComment h4 {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.pcWrapWide .pcComment h4 span {
+  display: block;
+  float: right;
+}
+.pcWrapWide .pcComment textarea {
+  width: 98%;
+  height: 100px;
+}
+.pcWrapWide .pcComment .commentInput {
+  display: none;
+}
+.pcWrapWide .pcComment .commentList {
+  width: 100%;
+  margin-top: 15px;
+}
+.pcWrapWide .pcComment .commentList dl {
+  width: 100%;
+  line-height: 20px;
+  font-size: 12px;
+  border-top: #E6E6E6 1px solid;
+  padding: 10px 0 8px 0;
+}
+.pcWrapWide .pcComment .commentList dl dt {
+  width: 85%;
+  float: left;
+  overflow: hidden;
+}
+.pcWrapWide .pcComment .commentList dl dt img {
+  vertical-align: middle;
+}
+.pcWrapWide .pcComment .commentList dl dt a {
+  margin-right: 5px;
+}
+.pcWrapWide .pcComment .commentList dl dd {
+  width: 15%;
+  float: left;
+  text-align: right;
+}
+.pcWrapWide .pcCommentFix {
+  position: fixed;
+  top: 45px;
+  right: 0px;
+  width: 450px;
+}
+.pcWrapWide .pcCommentFix h4 {
+  line-height: 15px;
+}
+.pcWrap {
+  width: 740px;
+}
+.pcWrap .pcCommentFix {
+  display: none;
+}
+.pcWrap .pcComment .commentInput {
+  display: block;
+}
+.pcWrap .pcComment h4 {
+  line-height: 15px;
+}
+.submitSmall {
+  height: 35px;
+  line-height: 30px;
+  text-align: right;
+}
+.submitSmall a {
+  width: 78px;
+  height: 32px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #787878;
+  color: #fff;
+}
+.submitSmall a button {
+  width: 78px;
+  height: 20px;
+  line-height: 24px;
+  cursor: pointer;
+  color: #fff;
+  background: none;
+}
+.submitSmall a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #999;
+}
+.sBodypadding {
+  padding: 30px 0;
+}
+.sBody {
+  width: 980px;
+  margin: 20px auto;
+  min-height: 350px;
+}
+.sBody .sToper {
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px 0;
+  line-height: 18px;
+  border-bottom: #E6E6E6 1px solid;
+}
+.sBody .sToper .scWords {
+  line-height: 30px;
+}
+.sBody .sToper .scInput {
+  display: block;
+  float: right;
+  width: 230px;
+  height: 28px;
+  position: relative;
+  background: none repeat scroll 0 0 #E7E7E7;
+  border-color: #B2B2B2 #D6D6D6 #F3F3F3;
+  border-style: solid;
+  border-width: 1px;
+}
+.sBody .sToper .scInput input {
+  display: block;
+  position: absolute;
+  height: 20px;
+  line-height: 20px;
+  left: 5px;
+  top: 4px;
+  background: none;
+  width: 180px;
+  color: #555;
+}
+.sBody .sToper .scInput button {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-position: -762px -115px;
+  top: 4px;
+  right: 10px;
+}
+.sBody .sToper .scInputH {
+  background-color: #fff;
+}
+.sBody .sToper .scInputH input {
+  color: #222;
+}
+.sBody .sTitle {
+  width: 600px;
+  float: left;
+}
+.sBody .sTitle .sFace {
+  float: left;
+  width: 50;
+  height: 55px;
+}
+.sBody .sTitle .sFace img {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.sBody .sTitle .sFace span {
+  display: block;
+  background-color: #777;
+  width: 46px;
+  padding: 2px;
+  text-align: center;
+}
+.sBody .sTitle .sFace span a {
+  display: inline-block;
+  height: 12px;
+  margin: 0 px;
+  width: 15px;
+}
+.sBody .sTitle .sName {
+  float: left;
+  width: 500px;
+  margin-left: 15px;
+  height: 80px;
+  overflow: hidden;
+}
+.sBody .sTitle .sName h2 {
+  font-size: 14px;
+}
+.sBody .sTitle .sName h2 span {
+  float: right;
+  font-size: 12px;
+  font-weight: normal;
+}
+.sBody .sTitle .sName p {
+  font-size: 12px;
+  height: 50;
+  overflow: hidden;
+}
+.sBody .sContent {
+  padding: 10px 0 10px 14px;
+  min-height: 600px;
+}
+.sBody .sContent a {
+  display: block;
+  float: left;
+  cursor: pointer;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+.sBody .sContent a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.sBody .sContent a img {
+  width: 150px;
+  height: 150px;
+}
+.sBody .sContent a span {
+  position: absolute;
+  width: 130px;
+  height: 110px;
+  padding: 30px 10px 10px 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 25px;
+  overflow: hidden;
+  background-position: -850px -556px;
+}
+.sBody .sContent a span b {
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  text-align: center;
+  width: 130px;
+  font-size: 14px;
+  font-weight: normal;
+}
+.sBody .sFriend {
+  padding: 20px;
+}
+.sBody .sFriend ul {
+  float: left;
+}
+.sBody .sFriend .sFriendList {
+  width: 680px;
+}
+.sBody .sFriend .sFriendList .fr {
+  padding: 30px 0 0 0;
+}
+.sBody .sFriend .sFriendList .fr .comBt {
+  margin: 0;
+}
+.sBody .sFriend .sFriendList li {
+  float: left;
+  width: 308px;
+  height: 35px;
+  padding: 15px;
+  border: #fff 1px solid;
+  display: block;
+  background-color: #ccc;
+  cursor: pointer;
+  position: relative;
+}
+.sBody .sFriend .sFriendList li img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.sBody .sFriend .sFriendList li .pbg {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+}
+.sBody .sFriend .sFriendList li:hover {
+  background-color: #ddd;
+}
+.sBody .sFriend .sFriendNew {
+  float: right;
+  width: 204px;
+}
+.sBody .sFriend .sFriendNew li {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: #fff 1px solid;
+  position: relative;
+}
+.sBody .sFriend .sFriendNew li img {
+  width: 100px;
+  height: 100px;
+}
+.sBody .sFriend .sFriendNew li .pbg {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: block;
+}
+.sBody .setBody {
+  width: 800px;
+  margin: 0 auto;
+}
+.sBody .setBody table {
+  width: 100%;
+  border-collapse: collapse;
+  border-style: none;
+  border-left: #EBEBEB 1px solid;
+  border-right: #EBEBEB 1px solid;
+}
+.sBody .setBody table td {
+  border-top: #EBEBEB 1px solid;
+  border-bottom: #EBEBEB 1px solid;
+  height: 60px;
+  padding: 10px 20px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.sBody .setBody table td img {
+  vertical-align: middle;
+}
+.sBody .setBody table td .tabA {
+  margin-left: 15px;
+}
+.sBody .setBody table td .textInput {
+  display: block;
+  width: 100%;
+  height: 28px;
+  border: #ccc 1px solid;
+  text-indent: 10px;
+  line-height: 28px;
+}
+.sBody .setBody table td .textTextarea {
+  height: 300px;
+  font-size: 14px;
+  color: #555;
+  overflow: auto;
+  text-indent: 0px;
+  width: 98%;
+}
+.sBody .setBody table td label {
+  cursor: pointer;
+  margin-right: 25px;
+}
+.sBody .setBody table td label input {
+  margin-right: 5px;
+  cursor: pointer;
+}
+.sBody .setBody table .msgContent {
+  line-height: 25px;
+}
+.sBody .setBody table .msgContent span {
+  font-size: 12px;
+  display: block;
+  color: #555;
+  line-height: 20px;
+}
+.sBody .setBody table .msgContent span b {
+  display: inline-block;
+  font-weight: normal;
+  padding-left: 10px;
+}
+.sBody .setBody table .msgBt .comBt {
+  display: none;
+  margin: 0 5px;
+}
+.sBody .setBody table .msgBth .comBt {
+  color: #fff;
+  display: inline-block;
+}
+.sBody .setBody table .msgBth td {
+  background-color: #f7f7f7;
+}
+.sBody .setBody table .tabTitle {
+  padding-left: 10px;
+}
+.sBody .setBody table .tabHead {
+  background-color: #F7F7F7 !important;
+  text-align: center;
+  vertical-align: top;
+}
+.sBody .setBody .msgSend {
+  height: 30px;
+  line-height: 30px;
+  padding: 20px 0 0 50px;
+  text-align: center;
+}
+.sBody .setBody .msgSend input {
+  height: 30px;
+  border: #ccc 1px solid;
+  text-indent: 10px;
+  vertical-align: middle;
+  width: 400px;
+  display: block;
+  float: left;
+  margin: 0 15px 0 ;
+}
+.sBody .setBody .msgSend .comBt {
+  color: #fff;
+  display: block;
+  float: left;
+  margin-top: 1px;
+}
+.sBody .setBody .msgTitle {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.sBody .setBody .msgTitle b {
+  padding: 0 5px;
+}
+.sBody .setBody .msgChat {
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  overflow: auto;
+  border: #EBEBEB 1px solid;
+}
+.sBody .setBody .msgChat .tabTitle {
+  border-left: none;
+  border-right: none;
+}
+.sBody .setBody .msgChat table {
+  border: none;
+}
+.sBody .setBody .msgChat table td {
+  border-top: none;
+  border-bottom: none;
+}
+.sBody .setBody .msgChat .msgBox {
+  margin: 0;
+  position: relative;
+  width: 80%;
+  min-height: 28px;
+  color: #444;
+  background-color: #F3F3F3;
+  border: #E7E7E7 1px solid;
+}
+.sBody .setBody .msgChat .msgBox .msgArrow {
+  position: absolute;
+  top: -2px;
+  width: 13px;
+  height: 12px;
+}
+.sBody .setBody .msgChat .msgBox p {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 10px;
+}
+.sBody .setBody .msgChat .msgBox p b {
+  display: inline-block;
+  margin-left: 15px;
+  font-weight: normal;
+  color: #777;
+}
+.sBody .setBody .msgChat .msgTa .msgBox {
+  float: left;
+}
+.sBody .setBody .msgChat .msgTa .msgBox .msgArrow {
+  left: -11px;
+  background-position: -164px -605px;
+}
+.sBody .setBody .msgChat .msgWo .msgBox {
+  background-color: #fff;
+  float: right;
+}
+.sBody .setBody .msgChat .msgWo .msgBox .msgArrow {
+  right: -11px;
+  background-position: -147px -605px;
+}
+.page span {
+  display: block;
+  float: left;
+  line-height: 45px;
+  padding-left: 110px;
+}
+.page span b {
+  padding: 0 5px;
+}
+.page a {
+  display: block;
+  float: right;
+  width: 104px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  background-position: -605px -759px;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 16px;
+}
+.page a:hover {
+  text-decoration: none;
+  background-position: -719px -759px;
+}
+.page .dis {
+  background-position: -605px -859px;
+}
+.page .dis:hover {
+  background-position: -605px -859px;
+}
+.sBodyWide {
+  width: 1280px;
+}
+.sBodyWide .sContent {
+  padding: 10px 0 ;
+  min-height: 600px;
+}
+.sfAdd {
+  background-position: -200px -698px;
+}
+.sfAdd:hover {
+  background-position: -174px -698px;
+}
+.sfCancel {
+  background-position: -148px -698px;
+}
+.sfCancel:hover {
+  background-position: -122px -698px;
+}
+.pnNow {
+  width: 17px;
+  height: 10px;
+  position: absolute;
+  background-position: -983px -82px;
+  bottom: -3px;
+}
+.pnIndex {
+  left: 99px;
+}
+.pnContent {
+  left: 160px;
+}
+.pnMsg {
+  left: 220px;
+}
+.pnFriend {
+  left: 280px;
+}
+.pnSearch {
+  left: 342px;
+}
+.pnSetting {
+  left: 400px;
+}
+.comBt {
+  display: inline-block;
+  width: 88px;
+  height: 30px;
+  line-height: 28px;
+  margin: 0 15px 0 0;
+  background-position: -297px -789px;
+}
+.comBt:hover {
+  text-decoration: none;
+  background-position: -395px -789px;
+}
+.comBt button {
+  background: none;
+  width: 88px;
+  height: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+.comCBt {
+  background-position: -297px -869px;
+}
+.comCBt:hover {
+  background-position: -395px -869px;
+}
+.comDBt {
+  background-position: -297px -829px;
+}
+.comDBt:hover {
+  background-position: -395px -829px;
+}
+#selFriend {
+  padding: 2px 3px;
+}

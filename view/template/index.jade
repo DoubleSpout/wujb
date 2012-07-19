@@ -1,0 +1,27 @@
+include include/head 
+body
+- var r = Math.random();
+  #loading.loading
+  #iWrap.iWrap
+    .iBgWrap
+      img#iPbg.iPbg(src="#{imgurl}")
+      #iForm.iForm
+        .iLogo.ibg 
+        form#iLoginForm(action="/home/login",method="post")
+          input(name="_hash",type="hidden", value="#{r}")
+          #iEmail.iEmail.ibg.iiBox.iEmail2
+            span#iTips.iTips.ibg 免注册，输入邮箱。
+              a#iWantPwd(href="javascript:;") 我想要密码
+            span.ibg.iEmailbg.iiBg
+            input#email(type="text", name="email", tabindex="1", autocomplete="off")
+          #iPwd.iPwd.ibg.iiBox.iPwd2
+            span.ibg.iPwdbg.iiBg
+            input#pwd(name="password", id="pwd", tabindex="2", autocomplete="off",type="password")
+          a#iSubmit.iSubmit.ibg.iSubmit2
+            button(tabindex="3", type="submit")
+              span 登录
+      #iFoot.iFoot
+        .ifText snoopyxdy 版权所有 ©2011-2012
+        a#explorer.ibg(href="javascript:;", title="探索") Explorer
+  include eindex
+  include include/footjs

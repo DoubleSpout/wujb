@@ -1,0 +1,21 @@
+.pcTitle.clearfix
+  .pctFace
+    a(href="/content/list/#{content.authorid}",  target="wujb", title="#{content.authorname}")
+      img(src="#{content.authorface}", width="120", height="120", title="#{content.authorname}")
+    - if(!ismy){
+     span
+      a.pbg.faceMsg(href="/message/send/#{content.authorid}", target="_blank", title="发私信")
+      a.pbg.faceFriend(name="addfriend", href="/friends/add/#{content.authorid}", title="加好友")
+      a.pbg.facePerson(href="/content/list/#{content.authorid}", target="wujb", title="查看此人")
+    -}
+   .pctName
+        h2#name.clearfix #{content.authorname}
+          b #{user.name}
+          span.ftblue 最近登录日期：#{user.lastLoginTime}
+        p #{user.description}
+        - if(!ismy){
+          a.graya(href="/message/send/#{content.authorid}", target="wujb", title="发私信") 发私信
+          a.graya(name="addfriend", href="/friends/add/#{content.authorid}", title="加好友") 加好友
+          a.graya(name="love", href="/content/ilove/#{content.id}", title="喜欢此文章") 喜欢本文
+          a.graya(href="/content/list/#{content.authorid}", target="wujb", title="查看此人) 作者其他文章
+         -}

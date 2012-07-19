@@ -1,0 +1,12 @@
+h4.clearfix 评论（#{content.commetnum}）
+.commentInput
+    include sendcomment
+.commentList
+    -each comment in commentlist
+       dl.clearfix
+         dt.clearfix
+           a(href="/content/list/#{comment.author}", target="wujb", title="查看此人")
+             img(src="#{comment.face}", width="20", height="20")
+           a(href="/content/list/#{comment.author}",target="wujb", title="查看此人") #{comment.authorname}
+           | #{comment.content}
+         dd.ftgray #{comment.timestamp}

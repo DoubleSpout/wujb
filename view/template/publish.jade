@@ -1,0 +1,12 @@
+include include/head 
+body.whiteBg
+  - var nowClass = 'pnContent'
+  include include/top
+  .sBody.clearfix
+    .setBody.clearfix
+      - if(pubType == 'catalog')
+          include inc_publish/catalog
+      - else
+          include inc_publish/publish
+  include include/foot
+  include include/footjs

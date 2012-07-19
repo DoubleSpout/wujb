@@ -1,0 +1,13 @@
+include include/head 
+body
+  - var nowClass = 'pnIndex'
+  include include/top 
+  .pBody.clearfix
+    .pLeft.fl
+      include inc_home/publish
+      include inc_home/list
+      include include/page
+    .pRight.fr
+      include inc_home/quick
+  include include/foot
+  include include/footjs

@@ -1,0 +1,12 @@
+include include/head 
+body.whiteBg
+  - var nowClass = 'pnMsg'
+  include include/top
+  .sBody.whiteBg.sBodypadding.clearfix
+    .setBody.clearfix
+      - if(msgType == 'list')
+          include inc_message/list
+      - else
+          include inc_message/info
+  include include/foot
+  include include/footjs

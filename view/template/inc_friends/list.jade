@@ -1,0 +1,29 @@
+.sFriendList.clearfix.fl
+ -if(friendslist.length<1)
+   -if(myfriends)
+     p 你还没有好友，赶快添加吧！
+   -else
+     p 没有新朋友了，点换一换吧！
+ -else
+  ul
+   -each u in friendslist
+    li
+      a(href="/content/list/#{u._id}", target="_blank")
+        img(src="#{u.face}", width="40", height="40")
+      a(href="/content/list/#{u._id}", target="_blank")
+        #{u.email}(#{u.name})
+      -if(myfriends)
+       a.pbg.sfCancel(name="cancelfriend", href="/friends/cancel/#{u._id}", title="取消好友")
+      -else
+       -if(~my.friends.indexOf(u._id))
+         a.pbg.sfCancel(name="cancelfriend", href="/friends/cancel/#{u._id}", title="取消好友")
+       -else
+         a.pbg.sfAdd(href="/friends/add/#{u._id}", title="加好友", name="addfriend")
+ -if('undefined' != typeof lastid)
+  .fr
+    -if(lastid == 0)
+      a.pbg.comBt(href="/friends/explorer/")
+        button 换一换
+    -else
+      a.pbg.comBt(href="/friends/explorer/#{lastid}")
+        button 换一换

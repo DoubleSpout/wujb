@@ -1,0 +1,12 @@
+include include/head 
+body.whiteBg
+  - var nowClass = 'pnFriend'
+  include include/top
+  .sBody.clearfix
+    .sToper.clearfix
+      include include/sftop
+    .sFriend.clearfix
+      include inc_friends/list
+      include inc_friends/hot
+  include include/foot
+  include include/footjs

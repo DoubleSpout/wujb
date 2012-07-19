@@ -1,0 +1,17 @@
+#ieBody.ieBody
+  a#ieBack.ibg.ieBack(href="javascript:;")
+  .top    
+    #iForm2.iForm.ieForm
+      form#iLoginForm2(action="/home/login", method="post")
+        .iEmail.ibg.iiBox
+          span.ibg.iEmailbg.iiBg
+          input(name="email", tabindex="1", autocomplete="off")
+        .iPwd.ibg.iiBox
+          span.ibg.iPwdbg.iiBg
+          input(name="password", tabindex="2", autocomplete="off",type="password")
+        a.iSubmit.ibg
+          button(tabindex="3", type="submit")
+            span 登录
+  .shadow
+  #ieWrap.ieWrap       
+  include include/foot

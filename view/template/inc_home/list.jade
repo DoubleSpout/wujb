@@ -1,0 +1,35 @@
+#pList.pList.clearfix
+ -each content in contentlist
+   dl.clearfix
+     dt
+       img(src="#{content.authorface}", width="80", height="80")
+       -if(user._id !== content.authorid)
+        .dtLink
+          a.pbg.faceMsg(href="/message/send/#{content.authorid}", title="发私信", target="wujb")
+          - if(~user.friends.indexOf(content.authorid))
+           a.pbg.faceFriend2(name="cancelfriend", href="/friends/cancel/#{content.authorid}", title="删除好友")
+          -else
+           a.pbg.faceFriend(name="addfriend", href="/friends/add/#{content.authorid}", title="加好友")
+     dd.clearfix
+       .pbg.ddTop
+         .pbg.ddTopR
+       h2.clearfix
+         a(href="/content/info/#{content.id}", target="wujb") #{content.title}
+         a.fr.bluea(href="/content/list/#{content.authorid}",  target="wujb") #{content.authorname}
+       .ddContent.fl !{content.content}
+       .ddImg.fl
+         -if(content.type ==='video')
+              a(href="/content/info/#{content.id}", target="wujb")
+               img(src="/static/img/dflash.gif",title="播放flash视频")
+         -else  
+           - each img in content.imgs
+             a(href="/content/info/#{content.id}", target="wujb")
+               img(src="#{img}", width="220")
+       .ddBottom.clearfix
+           span.ftgray #{content.createtime}
+             a.graya(href="/content/info/#{content.id}", target="wujb") 评论(#{content.commetnum})
+             a.graya(href="/content/info/#{content.id}", target="wujb") 喜欢(#{content.lovenum})
+             - if(~user.love.indexOf(content.id))
+              a.pbg.ddLove.pinka(name="dislove", href="/content/inotlove/#{content.id}", title="不喜欢") 不喜欢
+             - else
+              a.pbg.ddLove.pinka(name="love", href="/content/ilove/#{content.id}", title="我喜欢") 我喜欢

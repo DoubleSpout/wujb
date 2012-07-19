@@ -1,0 +1,10 @@
+ul.sFriendNew.clearfix
+ -each u in newfriendslist
+    li
+      a(href="/content/list/#{u._id}", title="#{u.email}(#{u.name})")
+        img(src="#{u.face}", width="40", height="40")
+      -if(my._id != u._id)
+        -if(~my.friends.indexOf(u._id))  
+         a.pbg.sfCancel(href="/friends/cancel/#{u._id}", title="删除好友", name="cancelfriend")     
+        -else
+         a.pbg.sfAdd(href="/friends/add/#{u._id}", title="加好友", name="addfriend")   
