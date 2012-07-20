@@ -1,7 +1,6 @@
 // JavaScript Document
 //通用
 (function(win){
-
 	
 var restips = function(bl, msg){
 		if(bl){
@@ -48,7 +47,6 @@ var restips = function(bl, msg){
 	})
 	return false;
 	};
-
 $('a[name="addfriend"], a[name="cancelfriend"], a[name="love"], a[name="dislove"]').live('click', function(){
 		autoajax({url:$(this).prop('href')});
 		return false;
@@ -61,7 +59,6 @@ $('a[name="delMsg"]').click(function(){
 					 location.href =  location.href;
 		});
 	}, 'json')
-
 })
 //通用
 //资料设置
@@ -98,9 +95,14 @@ if($('#pQuick').length>0){
 		})
 	}
 //用户首页	
-
 //文章内容页
 if($('.commentForm').length>0){
+	var screenW = screenw = document.documentElement.clientWidth || document.body.clientWidth;
+	if(screenW<=1240){
+		$('.pcCommentFix').hide();
+		$('.pcComment').find('h4.clearfix').eq(1).hide();
+		$('.commentInput').show();
+	}
 	$('.msg').charcheck(100, 2, function(input, total){
 		var msgc = $(this).parents('.pcComment').find('.msgCondition');
 			condition = input+'/'+total;
@@ -151,11 +153,8 @@ if($('#selFriend').length>0){
 		location.href = href;
 		return false;
 	})
-
 }
-
 if($('#msgSend').length>0){
-
 	$('#msgSend').submit(function(){
 			var v = $.trim($('#msg').val());
 			if(v==='') return base.tip(false, '内容不能为空')||false;
@@ -169,19 +168,21 @@ if($('#msgSend').length>0){
 			return false;
 	})
 }
-
 //发送消息
 //获取未读消息
 if($('.pNav').length>0){
-	var setI = setInterval(function(){
-		$.get('/message/unread',{'r':Math.random},function(res){
+    var getMsg = function(){
+         $.get('/message/unread',{'r':Math.random},function(res){
 			if(res.status === 1){
 				var num = res.data - 0;
 				if(num>0) $('#unRead').html(num).parent().show();
 			}
 			else clearInterval(setI)
-		},'json')
+		},'json');       
+    };
+    setTimeout(function(){getMsg();},1000*3);
+	var setI = setInterval(function(){
+        getMsg();
 	},1000*30);
 }
-
 }(window))
