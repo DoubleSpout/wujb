@@ -55,7 +55,7 @@ home.index = function(req, res){//用户首页显示
 							v.authorname = v.authorname;
 							v.imgs = [v.url];
 							v.createtime = stool.fdate('y-m-d h:m:s', v.timestamp);
-							v.commetnum = v.commet||0;
+							v.commetnum = v.comment||0;
 							v.lovenum = v.love||0;
 						});
 						/*分页对象*/

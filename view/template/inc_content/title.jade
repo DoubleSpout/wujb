@@ -10,9 +10,9 @@
     -}
    .pctName
         h2#name.clearfix #{content.authorname}
-          b #{user.name}
-          span.ftblue 最近登录日期：#{user.lastLoginTime}
-        p #{user.description}
+          b #{content.name}
+          span.ftblue 最近登录日期：#{content.lastLoginTime}
+        p #{content.description}
         - if(!ismy){
           a.graya(href="/message/send/#{content.authorid}", target="wujb", title="发私信") 发私信
           a.graya(name="addfriend", href="/friends/add/#{content.authorid}", title="加好友") 加好友
