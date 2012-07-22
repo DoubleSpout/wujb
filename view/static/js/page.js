@@ -1,5 +1,6 @@
 // JavaScript Document
 //通用
+
 (function(win){
 	
 var restips = function(bl, msg){
@@ -139,6 +140,66 @@ if($('#pubCat').length>0){
 //发布封面
 //发布内容
 if($('#publish').length>0){
+
+	var typeObj = $('input[name="type"]'),
+		typeObjChecked = $('input[name="type"]:checked'),
+		urlPobj = $('#url').parents('tr'),
+		videoHobj = $('#videoHelp'),
+		typev = typeObjChecked.val();
+	if(typev === 'word') urlPobj.hide();
+	else if(typev === 'video') videoHobj.show();
+	typeObj.click(function(){
+
+		var v = $(this).val();
+		if(v === 'word') {
+			urlPobj.hide();
+			videoHobj.hide();
+		}
+		else  if(v === 'pic'){
+			urlPobj.show();
+			videoHobj.hide();
+		}
+		else{
+			urlPobj.show();
+			videoHobj.show();
+		}
+	});
+	typeObjChecked.trigger('click');
+	$('#publish').submit(function(){
+		var titlev = $.trim($('#title').val()),
+			urlv = $.trim($('#url').val()),
+			contentv = $.trim($('#content').val()),
+			typev = $('input[name="type"]:checked').val();
+		
+		if(titlev === '') {
+			base.tip(restips(false, '标题必填'));
+			return false
+		}
+		if(contentv === '') {
+			base.tip(restips(false, '内容必填'));
+			return false
+		}
+		if(contentv.length>300) {
+			base.tip(restips(false, '内容过长')); 
+			return false
+		}
+		if(typev === 'pic' && urlv === ''){
+			base.tip(restips(false, '图片路径必填')); 
+			return false
+		}
+		else if (typev === 'video'){
+			if(urlv === ''){
+				base.tip(restips(false, '视频路径必填')); 
+				return false
+			}
+			if(urlv.indexOf('.swf') === -1){
+				base.tip(restips(false, '视频路径为.swf文件')); 
+				return false
+			}
+		}
+		return true;
+	});
+
 	var err = $('#err').val(),
 		suc = $('#suc').val();
 	if($.trim(err) !== '') base.tip(restips(false,err));

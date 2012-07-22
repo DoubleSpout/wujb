@@ -237,6 +237,11 @@
 			}
 			.ddContent{
 				width:250px;
+				overflow: hidden;
+				line-height: 22px;
+			}
+			.wordContent{
+				width:500px;
 			}
 			.ddImg{
 				text-align:right;
@@ -393,6 +398,7 @@
 	}
 	.pcContent{
 		width:700px;
+		overflow:hidden;
 		position:relative;
 		margin:20px 0 0 0;
 		background-color:#fff;
@@ -789,7 +795,7 @@
 			td{
 				border-top: #EBEBEB 1px solid;
 				border-bottom: #EBEBEB 1px solid;
-				height: 60px;
+				height: 40px;
 				padding:10px 20px;
 				line-height:40px;
 				font-size:16px;
@@ -807,8 +813,16 @@
 					text-indent:10px;
 					line-height:28px;
 				}
+				.urlInput{
+					width:75%;
+					float:left;
+				}
+				#videoHelp{
+					line-height:28px;
+					height:28px;
+				}
 				.textTextarea{
-					height:300px;
+					height:150px;
 					font-size:14px;
 					color:#555;
 					overflow:auto;

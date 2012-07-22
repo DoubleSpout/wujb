@@ -16,12 +16,16 @@
        h2.clearfix
          a(href="/content/info/#{content.id}", target="wujb") #{content.title}
          a.fr.bluea(href="/content/list/#{content.authorid}",  target="wujb") #{content.authorname}
-       .ddContent.fl !{content.content}
-       .ddImg.fl
-         -if(content.type ==='video')
+       -if(content.type ==='word')
+         .ddContent.fl.wordContent !{content.content}
+       -else
+         .ddContent.fl !{content.content}
+       -if(content.type ==='video')
+         .ddImg.fl
               a(href="/content/info/#{content.id}", target="wujb")
                img(src="/static/img/dflash.gif",title="播放flash视频")
-         -else  
+       -else if(content.type ==='pic')
+         .ddImg.fl
            - each img in content.imgs
              a(href="/content/info/#{content.id}", target="wujb")
                img(src="#{img}", width="220")

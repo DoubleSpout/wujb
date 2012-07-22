@@ -30,15 +30,17 @@ form#publish(action="/publish/add/", method="post")
       td.tabHead 标题
       td 
         input#title.textInput(type="text", value="",  name="title", maxlength="15")
-      td.ftgray *最长30位
+      td.ftgray *最长15位
     tr
       td.tabHead 图片/视频 地址
       td(colspan="2")
-        input#url.textInput(type="text", value="",  name="url", maxlength="200")
+        input#url.textInput.urlInput(type="text", value="",  name="url", maxlength="200")
+        span#videoHelp.fr.ftgray.none *后缀名为.swf地址
     tr
       td.tabHead 正文内容
       td(colspan="2") 
-        textarea#content.textInput.textTextarea(name="content", maxlength="200")
+        textarea#content.textInput.textTextarea(name="content", maxlength="300")
+        span.ftgray *最多300个字
     tr
       td
       td
