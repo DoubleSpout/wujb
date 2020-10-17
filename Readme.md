@@ -1,4 +1,4 @@
-# wujb —— node.js and mongodb blog website
+# wujb —— node.js and mongodb blog website An Amazing Project
 
   wujb是利用node.js和mongodb搭建的轻博客站点，这里是此站点的源文件
 
